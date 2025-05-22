@@ -1,0 +1,5 @@
+log_level: "debug"
+redis_url: "127.0.0.1:6379"
+http_server:
+  address: "127.0.0.1:8085"
+  timeout: 5s
