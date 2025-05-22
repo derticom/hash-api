@@ -9,9 +9,12 @@ import (
 )
 
 type Config struct {
-	LogLevel string     `yaml:"log_level"`
-	RedisURL string     `yaml:"redis_url"`
-	Server   HTTPServer `yaml:"http_server"`
+	LogLevel string `yaml:"log_level"`
+
+	RedisURL string        `yaml:"redis_url"`
+	RedisTTL time.Duration `yaml:"redis_ttl"`
+
+	Server HTTPServer `yaml:"http_server"`
 }
 
 type HTTPServer struct {
